@@ -1,7 +1,5 @@
 package stepDefinations;
 
-package stepDefinations;
-
 import org.openqa.selenium.WebDriver;
 
 import commonFunctions.FunctionLibrary;

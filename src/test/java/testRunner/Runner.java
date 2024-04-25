@@ -2,12 +2,12 @@ package testRunner;
 
 import org.junit.runner.RunWith;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"FeatureFiles"},tags = "@SupplierTest",  monochrome = true,glue = {"stepDefinations"},plugin = {"pretty","html:target/cucumber/report.html"})
-public class Runner extends AbstractTestNGCucumberTests{
+@CucumberOptions(features = {"FeatureFiles"},monochrome = true,glue = {"stepDefinations"},plugin = {"pretty", "html:target/cucumber-reports"})
+public class Runner {
 
 }
